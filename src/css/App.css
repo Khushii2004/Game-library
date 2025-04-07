@@ -1,0 +1,9 @@
+main {
+    min-height: 80vh; /* Keeps content readable */
+  }
+  
+  @media (max-width: 768px) {
+    .d-flex {
+      flex-direction: column; /* Stack sidebar and content on mobile */
+    }
+  }

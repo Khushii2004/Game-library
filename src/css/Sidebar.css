@@ -1,0 +1,101 @@
+.sidebar {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 20px 15px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.filters-panel.hide {
+  display: none;
+}
+
+.filters-panel.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+    padding: 10px 15px;
+  }
+
+  .filters-panel {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+  }
+
+  .sidebar h5 {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .filter-select,
+  .form-select {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
+
+h5 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.27rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.form-label {
+  color: #2a5298;
+  font-weight: 500;
+}
+
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus {
+  border-color: #2914b2;
+  box-shadow: 0 0 8px rgba(81, 203, 255, 0.564);
+  outline: none;
+}
+
+.filter-select {
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.filter-select option {
+  background-color: #fff;
+  padding: 6px;
+}
+
+.filter-select option:hover {
+  background-color: #e0e0e0;
+}

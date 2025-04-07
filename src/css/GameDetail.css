@@ -1,0 +1,125 @@
+.game-detail {
+  padding: 2rem;
+  background-color: #f2f4f8;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+h1, h2 {
+  font-size: 2.2rem;
+  color: #1c1c1c;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.img-fluid {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.screenshots img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+
+.badge-section {
+  margin-top: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #dee2e6;
+  color: #333;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 12px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.content {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+/* Webkit scrollbar */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.description-wrapper,
+.requirements-wrapper {
+  position: relative;
+}
+
+.description-text,
+.requirements-text {
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.description-text.expanded,
+.requirements-text.expanded {
+  max-height: 1000px;
+}
+
+.toggle-description-btn {
+  margin-top: 0.5rem;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Optional: Add slight hover feedback for toggle buttons */
+.toggle-description-btn:hover {
+  background-color: #f8f9fa;
+}

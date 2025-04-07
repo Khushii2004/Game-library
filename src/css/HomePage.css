@@ -1,0 +1,47 @@
+/* HomePage.css */
+
+/* Main container */
+.home-page {
+  min-height: 80vh;
+  background: #f8f9fa; /* Subtle Bootstrap gray */
+}
+
+/* Pagination controls */
+.pagination-controls {
+  padding: 1rem 0;
+  flex-wrap: wrap; /* Stack buttons on smaller screens */
+}
+
+.pagination-controls span {
+  font-weight: 500;
+  color: #495057;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+.pagination-controls .btn {
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.pagination-controls .btn:hover {
+  transform: translateY(-2px);
+  background-color: #e2e6ea; /* Light hover feedback */
+}
+
+/* Loading & Error display */
+.text-center {
+  padding: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .pagination-controls span {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+  }
+
+  .pagination-controls .btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,96 @@
+/* GameCard.css */
+
+.game-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image */
+.game-card .card-img-top,
+.game-card .img-fluid {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Body */
+.game-card .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+/* Title */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 0.5rem;
+}
+
+/* Tags & Rating */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.tags .badge {
+  font-size: 0.75rem;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.rating svg {
+  margin-right: 4px;
+  color: #ffc107;
+}
+
+/* Buttons */
+.view-btn {
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.view-btn:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .game-card .card-img-top {
+    height: 150px;
+  }
+
+  .view-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
